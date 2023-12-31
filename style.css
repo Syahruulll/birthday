@@ -36,7 +36,7 @@ body {
   .card img.birthday {
     width: 100%;
     max-width: 1000px;
-    max-height: unset;
+    max-height: 100%;
   }
 }
 
@@ -47,7 +47,7 @@ body {
   .card img.birthday {
     width: 100%;
     max-width: 1000px;
-    max-height: unset;
+    max-height: 100%;
   }
 }
 
