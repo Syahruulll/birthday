@@ -31,7 +31,7 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .card {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
   .card img.birthday {
     width: 100%;
@@ -42,7 +42,7 @@ body {
 
 @media only screen and (max-height: 640px) {
   .card {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
   .card img.birthday {
     width: 100%;
