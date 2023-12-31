@@ -11,7 +11,8 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  color: #fff; /* Improved text contrast */
+  color: #fff; /* Kontras teks yang ditingkatkan */
+  font-size: 16px; /* Ukuran font umum */
 }
 
 .card {
@@ -19,7 +20,7 @@ body {
   border-radius: 4px;
   height: 85vh;
   width: 80vw;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjusted box shadow for depth */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bayangan kotak yang disesuaikan untuk kedalaman */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -27,6 +28,16 @@ body {
   align-items: center;
   padding: 1em;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90vw;
+    height: auto;
+  }
+  .text {
+    padding: 0.5em;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -51,13 +62,14 @@ body {
   }
 }
 
-img.birthday {
-  max-height: 40vh;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .text {
   padding: 1em;
-  color: #333; /* Adjusted text color */
+  color: #333; /* Warna teks yang disesuaikan */
 }
 
 .muted {
@@ -78,5 +90,5 @@ img.birthday {
 }
 
 body.play-music {
-  animation: fadeIn 2s ease-in-out; /* Adjust the animation duration and timing function as needed */
+  animation: fadeIn 2s ease-in-out; /* Sesuaikan durasi dan fungsi waktu animasi jika diperlukan */
 }
