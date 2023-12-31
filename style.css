@@ -30,7 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1em;
-  overflow: hidden;
+  overflow-y: auto; /* Allow vertical scrolling */
 }
 
 /* Media query for larger screens */
