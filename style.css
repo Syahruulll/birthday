@@ -55,14 +55,14 @@ body {
     width: 100%;
     max-width: 50vw;
     max-height: unset;
-    order: -1; /* Move the image to the top */
+    order: 1; /* Move the image to the top */
   }
 }
 
 /* Image styles */
 img.birthday {
   max-height: 40vh;
-  order: -1; /* Move the image to the top */
+  order: 1; /* Move the image to the top */
 }
 
 /* Text styles */
