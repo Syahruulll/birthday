@@ -1,12 +1,9 @@
-/* Import font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-/* Apply a transition to all elements */
 * {
   transition: all 0.2s ease-in-out;
 }
 
-/* Body styles */
 body {
   background: pink;
   display: grid;
@@ -14,72 +11,63 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: #fff; /* Improved text contrast */
 }
 
-/* Card styles */
 .card {
   background: #fdfdfd;
   border-radius: 4px;
   height: 85vh;
   width: 80vw;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjusted box shadow for depth */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1em;
-  overflow-y: auto; /* Allow vertical scrolling */
+  overflow: hidden;
 }
 
-/* Media query for larger screens */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
   .card {
-    flex-direction: column; /* Change flex direction to column for larger screens */
+    flex-direction: row-reverse;
   }
   .card img.birthday {
     width: 100%;
-    max-width: 60vw;
+    max-width: 50vw;
     max-height: unset;
   }
 }
 
-/* Media query for smaller screens */
-@media only screen and (max-height: 490px) {
+@media only screen and (max-height: 690px) {
   .card {
-    flex-direction: column; /* Change flex direction to column for smaller screens */
+    flex-direction: row-reverse;
   }
   .card img.birthday {
     width: 100%;
-    max-width: 100%;
+    max-width: 50vw;
     max-height: unset;
   }
 }
 
-/* Image styles */
 img.birthday {
-  max-height: 55vh;
-/*   order: 1; /* Move the image to the top */ */
+  max-height: 30vh;
 }
 
-/* Text styles */
 .text {
   padding: 1em;
-  color: #333;
+  color: #333; /* Adjusted text color */
 }
 
-/* Muted text styles */
 .muted {
   opacity: 0.8;
 }
 
-/* Spacer styles */
 .space {
   height: 100px;
 }
 
-/* Keyframe animation for fading in */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -89,7 +77,6 @@ img.birthday {
   }
 }
 
-/* Animation styles for body with 'play-music' class */
 body.play-music {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out; /* Adjust the animation duration and timing function as needed */
 }
