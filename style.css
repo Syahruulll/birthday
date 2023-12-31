@@ -47,7 +47,7 @@ body {
 }
 
 /* Media query for smaller screens */
-@media only screen and (max-height: 390px) {
+@media only screen and (max-height: 590px) {
   .card {
     flex-direction: column; /* Change flex direction to column for smaller screens */
   }
