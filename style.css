@@ -52,7 +52,7 @@ body {
   }
   .card img.birthday {
     width: 100%;
-    max-width: 60vw;
+    max-width: 100%;
     max-height: unset;
   }
 }
