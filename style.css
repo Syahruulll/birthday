@@ -34,7 +34,7 @@ body {
     flex-direction: row-reverse;
   }
   .card img.birthday {
-    width: 500%;
+    width: 50%;
     max-width: 1000px;
     max-height: 50%;
   }
