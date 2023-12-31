@@ -1,9 +1,12 @@
+/* Import font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+/* Apply a transition to all elements */
 * {
   transition: all 0.2s ease-in-out;
 }
 
+/* Body styles */
 body {
   background: pink;
   display: grid;
@@ -11,15 +14,16 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  color: #fff; /* Improved text contrast */
+  color: #fff;
 }
 
+/* Card styles */
 .card {
   background: #fdfdfd;
   border-radius: 4px;
   height: 85vh;
   width: 80vw;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjusted box shadow for depth */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -29,45 +33,55 @@ body {
   overflow: hidden;
 }
 
+/* Media query for larger screens */
 @media only screen and (min-width: 1000px) {
   .card {
-    flex-direction: row-reverse;
+    flex-direction: column; /* Change flex direction to column for larger screens */
   }
   .card img.birthday {
     width: 100%;
     max-width: 50vw;
     max-height: unset;
+    order: -1; /* Move the image to the top */
   }
 }
 
+/* Media query for smaller screens */
 @media only screen and (max-height: 390px) {
   .card {
-    flex-direction: row-reverse;
+    flex-direction: column; /* Change flex direction to column for smaller screens */
   }
   .card img.birthday {
     width: 100%;
     max-width: 50vw;
     max-height: unset;
+    order: -1; /* Move the image to the top */
   }
 }
 
+/* Image styles */
 img.birthday {
   max-height: 40vh;
+  order: -1; /* Move the image to the top */
 }
 
+/* Text styles */
 .text {
   padding: 1em;
-  color: #333; /* Adjusted text color */
+  color: #333;
 }
 
+/* Muted text styles */
 .muted {
   opacity: 0.8;
 }
 
+/* Spacer styles */
 .space {
   height: 100px;
 }
 
+/* Keyframe animation for fading in */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -77,6 +91,7 @@ img.birthday {
   }
 }
 
+/* Animation styles for body with 'play-music' class */
 body.play-music {
-  animation: fadeIn 2s ease-in-out; /* Adjust the animation duration and timing function as needed */
+  animation: fadeIn 2s ease-in-out;
 }
